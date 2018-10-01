@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+
+<head>
+  <title></title>
+</head>
+
+<body>
+
+  <div class="flex-container">
+    <h1>Tip Calculator</h1>
+    <p>
+      <label for="amount">Bill</label> <br>
+      <input id="amount" type="number" value="0.00">
+    </p>
+
+    <p>
+      <label for="percent">Tip %</label> <br>
+      <input id="percent" type="number" value="15">
+    </p>
+
+    <p>
+      <label for="split">Number of people</label> <br>
+      <input id="split" type="number" value="0">
+    </p>
+
+    <button id="calculate">Calculate</button>
+
+    <p class="bottom">
+      <span>Tip:</span>
+      <span id="tip">$0.00</span>
+    </p>
+
+    <p class="bottom">
+      <span>Total:</span>
+      <span id="total">$0.00</span>
+    </p>
+
+
+      <h3>Per Person:</h3>
+   
+
+    <p class="bottom">
+      <span>Tip from Each:</span>
+      <span id="eachTip">$0.00</span>
+    </p>
+
+    <p class="bottom">
+      <span>Total from Each:</span>
+      <span id="eachTotal">$0.00</span>
+    </p>
+
+  </div>
+<script src="main.js"></script>
+</body>
+
+<style>
+  .flex-container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+    height: 900px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: content-box;
+
+  }
+
+  span {
+    font-weight: bold;
+  }
+
+  #amount,
+  #percent, #split {
+    height: 50px;
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  button {
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 45px;
+    width: 406px;
+    font-size: 25px;
+  }
+
+  span {
+    font-size: 40px;
+
+  }
+
+  /* .bottom {
+    align-content: stretch;
+  } */
+</style>
+
+</html>
