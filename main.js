@@ -31,3 +31,5 @@ showTip.innerHTML = '$' + percentage.toFixed(2);
 eachTipAmount.innerHTML = "$" + calculateTipForEach.toFixed(2);
 eachTotalAmount.innerHTML = "$" + calculateTotalForEach.toFixed(2);
 }
+
+// adding this comment here
